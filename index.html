@@ -14,12 +14,11 @@
 <body ng-controller="MainCtrl">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main bookmark-rows">
+            <div class="col-sm-3 col-md-2 sidebar">
                 <a ng-click="setCurrentCategory(null)"><img class="logo" src="assets/img/eggly-logo.png"></a>
-                <ul class="nav nav-sidebar bookmark-rows">
+                <ul class="nav nav-sidebar">
                     <li ng-repeat="category in categories" ng-class="{'active':isCurrentCategory(category)}">
-                        <a class="bookmark-item"
-                        ng-click="setCurrentCategory(category)">
+                        <a ng-click="setCurrentCategory(category)">
                             {{category.name}}
                         </a>
                     </li>
