@@ -82,7 +82,7 @@ a:hover {
     background-color: #D5DBD8;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 382px) {
     .sidebar {
         position: fixed;
         top: 0;
@@ -96,6 +96,13 @@ a:hover {
         border-right: 1px solid #7B807E;
     }
 }
+@media (max-width: 766px){
+    .bookmark-rows {
+        float: right;
+    
+    }
+}
+
 
 .main {
     padding-top: 96px;
@@ -110,3 +117,5 @@ a:hover {
 .create-form, .edit-form {
     padding: 20px;
 }
+
+
